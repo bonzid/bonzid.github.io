@@ -1,0 +1,15 @@
+body {
+    background: #eeebd0;
+    justify-content: center;  
+    align-items: center;
+}
+
+.title{
+    font-size: 12px;
+    text-align:center;
+}
+
+.txt{
+    font-size:10px;
+    text-align:right;
+}
