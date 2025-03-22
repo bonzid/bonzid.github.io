@@ -1,6 +1,5 @@
 # bonzid.github.io
+This project is in progress. Please, come back later.
 
-Here's a text. This is how it would look like. TEST TEST TEST
-
-
-<h1>TEST</h1>
+test
+<h1>test!</h1>
