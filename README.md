@@ -1,5 +1,2 @@
-# bonzid.github.io
+# My website
 This project is in progress. Please, come back later.
-
-test
-<h1>test!</h1>
