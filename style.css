@@ -1,13 +1,15 @@
 :root {
-    --primary-color: #c54a80;
-    --secondary-color: #cd86a5;
+    --primary-color: #eac9c1;
+    --secondary-color: #d3ab9e;
+    --third-color: #ebd8d0;
+    --fourth-color: #fffbff;
     --font-family: 'Trebuchet MS, sans-serif';
     --font-size: 16px;
     --line-height: 1.5;
 }
 
 body {
-    background-color: white;
+    background-color: var(--fourth-color);
     font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
@@ -17,7 +19,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 0 0 10px;
 }
 
