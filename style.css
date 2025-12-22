@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'Molle';
+  src: url('fonts/Molle/Molle-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amarna';
+  src: url('fonts/Amarna/static/Amarna-Light.ttf') format('truetype');
+}
+
+
+:root {
+    --primary-color: #fedcdb;
+    --secondary-color: #C96480;
+    --third-color: #000000;
+
+    --font-title: 'Molle', cursive;
+    --font-body: 'Amarna', serif;
+
+    --font-size: 18px;
+    --line-height: 1.5;
+}
+
+
+.wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header, footer, main {
+  width: 100%;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header-bar {
+    width: 100%;
+    height:0.8px;
+    background: repeating-linear-gradient(
+      to right,
+      var(--secondary-color) 0 10px,
+      transparent 10px 20px
+    );
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+
+.title h1 {
+    margin: 0;
+    padding:0;
+    font-size: 22px;
+    font-family: var(--font-title);
+    color: var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    gap:20px;
+}
+
+.menu {
+    margin: 0;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-family: var(--font-body);
+    font-size: 16px;
+    text-transform: lowercase;
+    transition: color 0.4s ease;
+}
+
+.menu:hover {
+    color: var(--secondary-color);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    text-align:left;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    gap: 30px;
+}
+
+.text-side {
+    flex: none;     
+    text-align: right;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 90px;
+    max-width: 800px;  
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;  
+}
+
+.image-side {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 60px;
+}
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-top: 8px;
+    font-family: var(--font-body);
+    margin-right: 60px;
+}
+
+h2 {
+    font-family: var(--font-body);
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+p{
+    margin:0;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.aboutme p {
+  text-align:justify;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration:none;
+    color: var(--secondary-color);
+    transition: color 0.4s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.footer {
+  display: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 1rem;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
+
+
+/* REVOIR */
+
+#papers-tabs {
+  margin-top: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  border-bottom: var(--secondary-color);
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #0077cc; /* couleur texte onglet */
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #0077cc; /* couleur soulignement */
+  color: #005499; /* couleur onglet actif */
+}
+
+.paper {
+  margin-bottom: 1.2rem;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.paper-meta {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.details-btn {
+  margin-top: 0.4rem;
+  background: none;
+  border: none;
+  color: #0077cc; /* couleur du bouton */
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.details-btn:hover {
+  color: #005499; /* couleur au survol */
+}
+
+.details {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  display: none;
+}
+
+.details.open {
+  display: block;
+}
+
+.citation-block {
+  margin-top: 0.5rem;
+  font-family: monospace;
+  font-size: 0.85rem;
+  background: #f6f6f6;
+  padding: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.sub-btn {
+  margin-top: 0.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  color: #0077cc;
+}
+
+.sub-btn:hover {
+  color: #005499;
+}

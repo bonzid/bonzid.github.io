@@ -1,0 +1,20 @@
+[
+    {
+        "title": "CareMedEval dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field",
+        "type": "preprint",
+        "date": "2025",
+        "authors": [
+            "Doria Bonzi",
+            "Alexandre Guiggi",
+            "Frédéric Béchet",
+            "Carlos Ramisch",
+            "Benoit Favre"
+        ],
+        "link": "https://hal.science/hal-05376617",
+        "abstract": "Critical appraisal of scientific literature is an essential skill in the biomedical field. While large language models (LLMs) can offer promising support in this task, their reliability remains limited, particularly for critical reasoning in specialized domains. We introduce CareMedEval, an original dataset designed to evaluate LLMs on biomedical critical appraisal and reasoning tasks. Derived from authentic exams taken by French medical students, the dataset contains 534 questions based on 37 scientific articles. Unlike existing benchmarks, CareMedEval explicitly evaluates critical reading and reasoning grounded in scientific papers. Benchmarking state-of-the-art generalist and biomedical-specialized LLMs under various context conditions reveals the difficulty of the task: open and commercial models fail to exceed an Exact Match Rate of 0.5 even though generating intermediate reasoning tokens considerably improves the results. Yet, models remain challenged especially on questions about study limitations and statistical analysis. CareMedEval provides a challenging benchmark for grounded reasoning, exposing current LLM limitations and paving the way for future development of automated support for critical appraisal.",
+        "citations": {
+            "bibtex": "@unpublished{bonzi:hal-05376617,\n  TITLE = {{CareMedEval dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field}},\n  AUTHOR = {Bonzi, Doria and Guiggi, Alexandre and B{\\'e}chet, Fr{\\'e}d{\\'e}ric and Ramisch, Carlos and Favre, Benoit},\n  URL = {https://hal.science/hal-05376617},\n  NOTE = {working paper or preprint},\n  YEAR = {2025},\n  MONTH = Nov,\n  DOI = {10.48550/arXiv.2511.03441},\n  KEYWORDS = {Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI) ; critical appraisal ; reasoning ; evaluation ; medical ; domain specific dataset ; LLM},\n  PDF = {https://hal.science/hal-05376617v1/file/2511.03441v2.pdf},\n  HAL_ID = {hal-05376617},\n  HAL_VERSION = {v1}\n}",
+            "biblatex": "@online{bonzi2025caremedeval,\n  author = {Bonzi, Doria and Guiggi, Alexandre and Béchet, Frédéric and Ramisch, Carlos and Favre, Benoit},\n  title = {CareMedEval dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field},\n  year = {2025},\n  url = {https://hal.science/hal-05376617},\n  note = {HAL preprint}\n}"
+        }
+    }
+]
