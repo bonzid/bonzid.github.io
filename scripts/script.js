@@ -65,7 +65,7 @@ fetch("papers.json")
       });
     }
 
-    // Création des onglets
+    // création des onglets
     types.forEach((type, index) => {
       const button = document.createElement("button");
       button.className = "tab-button";
@@ -89,5 +89,5 @@ fetch("papers.json")
     });
   })
   .catch(err => {
-    console.error("Failed to load papers.json", err);
+    console.error("failed to load papers.json", err);
   });

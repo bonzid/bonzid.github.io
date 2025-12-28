@@ -14,6 +14,7 @@
     --primary-color: #fedcdb;
     --secondary-color: #C96480;
     --third-color: #000000;
+    --fourth-color: #874356;
 
     --font-title: 'Molle', cursive;
     --font-body: 'Amarna', serif;
@@ -220,12 +221,12 @@ a:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-weight: bold;
-  color: #0077cc; /* couleur texte onglet */
+  color: var(--secondary-color); /* couleur texte onglet */
 }
 
 .tab-button.active {
-  border-bottom: 2px solid #0077cc; /* couleur soulignement */
-  color: #005499; /* couleur onglet actif */
+  border-bottom: 2px solid var(--fourth-color); /* couleur soulignement */
+  color: var(--fourth-color); /* couleur onglet actif */
 }
 
 .paper {
@@ -245,14 +246,14 @@ a:hover {
   margin-top: 0.4rem;
   background: none;
   border: none;
-  color: #0077cc; /* couleur du bouton */
+  color: var(--fourth-color); /* couleur du bouton */
   cursor: pointer;
   font-size: 0.9rem;
   text-decoration: underline;
 }
 
 .details-btn:hover {
-  color: #005499; /* couleur au survol */
+  color: var(--fourth-color); /* couleur au survol */
 }
 
 .details {
@@ -268,8 +269,7 @@ a:hover {
 .citation-block {
   margin-top: 0.5rem;
   font-family: monospace;
-  font-size: 0.85rem;
-  background: #f6f6f6;
+  font-size: 0.6rem;
   padding: 0.5rem;
   white-space: pre-wrap;
 }
@@ -281,9 +281,9 @@ a:hover {
   cursor: pointer;
   font-size: 0.85rem;
   text-decoration: underline;
-  color: #0077cc;
+  color: var(--fourth-color);
 }
 
 .sub-btn:hover {
-  color: #005499;
+  color: var(--fourth-color);
 }
