@@ -25,9 +25,10 @@
 
 
 .wrapper {
-  max-width: 50rem;
   margin: 0 auto;
   padding: 0;
+    width: 50rem;
+  max-width: 100%;
 }
 
 header, footer, main {
@@ -207,12 +208,15 @@ a:hover {
 
 #papers-tabs {
   margin-top: 1.5rem;
+  border: 1px solid var(--secondary-color); 
+  border-radius: 12px;
 }
 
 .tabs {
   display: flex;
   gap: 1rem;
   border-bottom: var(--secondary-color);
+  margin-bottom: 1.5rem;
 }
 
 .tab-button {
@@ -235,21 +239,28 @@ a:hover {
 
 .paper-title {
   font-weight: bold;
+  margin-top:1rem;
+  margin-left:1rem;
 }
 
 .paper-meta {
   font-size: 0.9rem;
   color: var(--primary-color);
+  margin:0.2rem;
+  margin-left:1rem;
 }
 
 .details-btn {
-  margin-top: 0.4rem;
+  margin-top:1rem;
+  margin-left:1rem;
+  margin-bottom:0.2rem;
   background: none;
   border: none;
   color: var(--fourth-color); /* couleur du bouton */
   cursor: pointer;
   font-size: 0.9rem;
   text-decoration: underline;
+  text-align: justify;
 }
 
 .details-btn:hover {
@@ -257,9 +268,12 @@ a:hover {
 }
 
 .details {
-  margin-top: 0.5rem;
-  padding-left: 1rem;
+  margin-top: 1rem;
+  margin:2rem;
+  padding-left: 1.5rem;
   display: none;
+  text-align: justify;
+  font-size: 0.9rem;
 }
 
 .details.open {
@@ -267,7 +281,7 @@ a:hover {
 }
 
 .citation-block {
-  margin-top: 0.5rem;
+  margin: 1rem;
   font-family: monospace;
   font-size: 0.6rem;
   padding: 0.5rem;
@@ -275,7 +289,7 @@ a:hover {
 }
 
 .sub-btn {
-  margin-top: 0.3rem;
+  margin-top: 1rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -286,4 +300,38 @@ a:hover {
 
 .sub-btn:hover {
   color: var(--fourth-color);
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: var(--fourth-color);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0;
+}
+
+.dropdown-btn .arrow {
+  transition: transform 0.2s ease;
+}
+
+.details.open + .dropdown-btn .arrow,
+.dropdown-btn.open .arrow {
+  transform: rotate(90deg);
+}
+
+/* indentation levels */
+.dropdown-btn.sub {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.dropdown-btn.subsub {
+  margin-top: 0.3rem;
+  margin-left: 2rem;
+  font-size: 0.85rem;
 }

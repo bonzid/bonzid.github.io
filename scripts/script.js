@@ -34,20 +34,41 @@ fetch("papers.json")
             ${paper.authors.join(", ")} · ${paper.date}
           </div>
 
-          <button class="details-btn" data-target="${detailsId}">
-            More information
+          <!-- More information dropdown -->
+          <button class="dropdown-btn" data-target="${detailsId}">
+            <span>More information</span>
+            <span class="arrow">▸</span>
           </button>
 
           <div class="details" id="${detailsId}">
             <p>${paper.abstract}</p>
 
-            <button class="sub-btn" data-target="${citationsId}">
-              Citations
+            <!-- To cite dropdown -->
+            <button class="dropdown-btn sub" data-target="${citationsId}">
+              <span>To cite</span>
+              <span class="arrow">▸</span>
             </button>
 
             <div class="details" id="${citationsId}">
-              <div class="citation-block">${paper.citations.bibtex}</div>
-              <div class="citation-block">${paper.citations.biblatex}</div>
+              
+              <!-- BibTeX -->
+              <button class="dropdown-btn subsub" data-target="${citationsId}-bibtex">
+                <span>BibTeX</span>
+                <span class="arrow">▸</span>
+              </button>
+              <div class="details" id="${citationsId}-bibtex">
+                <div class="citation-block">${paper.citations.bibtex}</div>
+              </div>
+
+              <!-- BibLaTeX -->
+              <button class="dropdown-btn subsub" data-target="${citationsId}-biblatex">
+                <span>BibLaTeX</span>
+                <span class="arrow">▸</span>
+              </button>
+              <div class="details" id="${citationsId}-biblatex">
+                <div class="citation-block">${paper.citations.biblatex}</div>
+              </div>
+
             </div>
           </div>
         `;
@@ -56,37 +77,38 @@ fetch("papers.json")
       });
 
       // gestion des toggles après injection HTML
-      contentContainer.querySelectorAll("button[data-target]").forEach(btn => {
-        btn.addEventListener("click", () => {
-          document
-            .getElementById(btn.dataset.target)
-            .classList.toggle("open");
-        });
+    contentContainer.querySelectorAll("button[data-target]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const target = document.getElementById(btn.dataset.target);
+        target.classList.toggle("open");
+        btn.classList.toggle("open");
       });
+    });
+
+  }
+
+  // création des onglets
+  types.forEach((type, index) => {
+    const button = document.createElement("button");
+    button.className = "tab-button";
+    button.textContent = type;
+
+    if (index === 0) {
+      button.classList.add("active");
+      renderTab(type);
     }
 
-    // création des onglets
-    types.forEach((type, index) => {
-      const button = document.createElement("button");
-      button.className = "tab-button";
-      button.textContent = type;
+    button.addEventListener("click", () => {
+      document
+        .querySelectorAll(".tab-button")
+        .forEach(b => b.classList.remove("active"));
 
-      if (index === 0) {
-        button.classList.add("active");
-        renderTab(type);
-      }
-
-      button.addEventListener("click", () => {
-        document
-          .querySelectorAll(".tab-button")
-          .forEach(b => b.classList.remove("active"));
-
-        button.classList.add("active");
-        renderTab(type);
-      });
-
-      tabsContainer.appendChild(button);
+      button.classList.add("active");
+      renderTab(type);
     });
+
+    tabsContainer.appendChild(button);
+  });
   })
   .catch(err => {
     console.error("failed to load papers.json", err);
