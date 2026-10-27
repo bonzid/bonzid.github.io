@@ -1,21 +1,66 @@
 [
     {
+        "type": "conference papers",
+        "title": "A French OSCE Dialogue Dataset and Controllable Virtual Patient System for Clinical Training",
+        "authors": ["Doria Bonzi", "Tom Bourgeade", "Fabrice Lefèvre", "Irina Illina"],
+        "date": "2026-08",
+        "venue": "Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2026)",
+        "pages": "357–374",
+        "link": "https://aclanthology.org/2026.sigdial-1.25/",
+        "pdf": "https://aclanthology.org/2026.sigdial-1.25.pdf",
+        "abstract": "The clinical and communication skills of medical students are commonly assessed through Objective Structured Clinical Examinations (OSCEs), which consist of brief scenario-driven simulations of doctor-patient interactions. However, training is often limited by the low availability of human standardized patients, motivating the development of realistic virtual patients (VPs). To address this gap, we introduce a French OSCE dialogue dataset comprising 240 real student–patient training interactions. We build upon it a controllable LLM-based pipeline to generate synthetic OSCE dialogues. The pipeline integrates modular components, such as retrieval-based grounding and a reflection loop, to ensure patient fidelity, coherence, and realism. Additionally, we propose a multi-level evaluation framework assessing patient simulation quality, student performance, and linguistic quality, using an LLM-as-a-Judge approach. Experiments suggest that controllability modules generally improve patient fidelity and student evaluation consistency. Finally, we also implement an interactive prototype in which students can practice with a VP and receive automatic feedback.",
+        "citations": {
+            "biblatex": "@inproceedings{bonzi2026french,\n  author = {Bonzi, Doria and Bourgeade, Tom and Lefèvre, Fabrice and Illina, Irina},\n  title = {A {French} {OSCE} Dialogue Dataset and Controllable Virtual Patient System for Clinical Training},\n  booktitle = {Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue},\n  publisher = {Association for Computational Linguistics},\n  pages = {357--374},\n  date = {2026-08},\n  url = {https://aclanthology.org/2026.sigdial-1.25/}\n}",
+            "bibtex": "@inproceedings{bonzi2026french,\n  author = {Bonzi, Doria and Bourgeade, Tom and Lef{\\`e}vre, Fabrice and Illina, Irina},\n  title = {A {F}rench {OSCE} Dialogue Dataset and Controllable Virtual Patient System for Clinical Training},\n  booktitle = {Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue},\n  publisher = {Association for Computational Linguistics},\n  pages = {357--374},\n  year = {2026},\n  month = aug,\n  url = {https://aclanthology.org/2026.sigdial-1.25/}\n}"
+        }
+    },
+    {
+        "type": "conference papers",
+        "title": "Evaluer l'Analyse Critique et le Raisonnement dans le Domaine Biomédical",
+        "authors": ["Doria Bonzi", "Alexandre Guiggi", "Frédéric Béchet", "Carlos Ramisch", "Benoit Favre"],
+        "date": "2026-06",
+        "venue": "Conférence sur le Traitement Automatique des Langues Naturelles (TALN 2026), Volume 2",
+        "pages": "3–4",
+        "note": "Already-published paper track (LREC 2026)",
+        "link": "https://talnarchives.atala.org/TALN/TALN-2026/36.pdf",
+        "pdf": "https://talnarchives.atala.org/TALN/TALN-2026/36.pdf",
+        "code": "https://github.com/bonzid/CareMedEval",
+        "dataset": "https://huggingface.co/datasets/doriab/CareMedEval",
+        "abstract": "L'analyse critique de littérature scientifique est essentielle en biomédecine. Les grands modèles de langage (LLM) offrent un soutien prometteur, mais leur fiabilité reste limitée, notamment pour le raisonnement dans des domaines spécialisés. Nous présentons CareMedEval, un jeu de données pour évaluer les LLM sur des tâches d'évaluation critique et de raisonnement biomédical. Issu d'examens de médecine français, il contient 534 questions basées sur 37 articles scientifiques. Contrairement aux benchmarks existants, CareMedEval évalue explicitement la lecture critique et le raisonnement fondé sur des articles scientifiques. Le benchmarking de modèles LLM généralistes et spécialisés montre la difficulté de la tâche : les modèles open-source et commerciaux dépassent rarement un Exact Match Rate (EMR) de 0,5, même si la génération de tokens de raisonnement améliore les résultats. Les questions sur les limites des études et l'analyse statistique restent particulièrement difficiles. CareMedEval fournit un benchmark pour le raisonnement et guide le développement d'outils automatisés d'évaluation critique.",
+        "citations": {
+            "biblatex": "@inproceedings{bonzi2026caremedevaltaln,\n  author = {Bonzi, Doria and Guiggi, Alexandre and Béchet, Frédéric and Ramisch, Carlos and Favre, Benoit},\n  title = {{CareMedEval} : Evaluer l'Analyse Critique et le Raisonnement dans le Domaine Biomédical},\n  booktitle = {Actes de la 33ème Conférence sur le Traitement Automatique des Langues Naturelles (TALN). Volume 2 : articles déjà publiés},\n  volume = {2},\n  pages = {3--4},\n  date = {2026},\n  location = {Nantes, France},\n  url = {https://talnarchives.atala.org/TALN/TALN-2026/36.pdf},\n  langid = {french}\n}",
+            "bibtex": "@inproceedings{bonzi2026caremedevaltaln,\n  author = {Bonzi, Doria and Guiggi, Alexandre and B{\\'e}chet, Fr{\\'e}d{\\'e}ric and Ramisch, Carlos and Favre, Benoit},\n  title = {{CareMedEval} : Evaluer l'Analyse Critique et le Raisonnement dans le Domaine Biom{\\'e}dical},\n  booktitle = {Actes de la 33{\\`e}me Conf{\\'e}rence sur le Traitement Automatique des Langues Naturelles (TALN). Volume 2 : articles d{\\'e}j{\\`a} publi{\\'e}s},\n  volume = {2},\n  pages = {3--4},\n  year = {2026},\n  address = {Nantes, France},\n  url = {https://talnarchives.atala.org/TALN/TALN-2026/36.pdf}\n}"
+        }
+    },
+    {
+        "type": "conference papers",
         "title": "CareMedEval dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field",
-        "type": "preprint",
-        "date": "2025",
-        "doi":"10.48550/arXiv.2511.03441",
-        "authors": [
-            "Doria Bonzi",
-            "Alexandre Guiggi",
-            "Frédéric Béchet",
-            "Carlos Ramisch",
-            "Benoit Favre"
-        ],
-        "link": "https://hal.science/hal-05376617",
+        "authors": ["Doria Bonzi", "Alexandre Guiggi", "Frédéric Béchet", "Carlos Ramisch", "Benoit Favre"],
+        "date": "2026-05-11",
+        "venue": "Language Resources and Evaluation Conference (LREC 2026)",
+        "pages": "5169–5181",
+        "link": "https://lrec.elra.info/lrec2026-main-404",
+        "code": "https://github.com/bonzid/CareMedEval",
+        "dataset": "https://huggingface.co/datasets/doriab/CareMedEval",
         "abstract": "Critical appraisal of scientific literature is an essential skill in the biomedical field. While large language models (LLMs) can offer promising support in this task, their reliability remains limited, particularly for critical reasoning in specialized domains. We introduce CareMedEval, an original dataset designed to evaluate LLMs on biomedical critical appraisal and reasoning tasks. Derived from authentic exams taken by French medical students, the dataset contains 534 questions based on 37 scientific articles. Unlike existing benchmarks, CareMedEval explicitly evaluates critical reading and reasoning grounded in scientific papers. Benchmarking state-of-the-art generalist and biomedical-specialized LLMs under various context conditions reveals the difficulty of the task: open and commercial models fail to exceed an Exact Match Rate of 0.5 even though generating intermediate reasoning tokens considerably improves the results. Yet, models remain challenged especially on questions about study limitations and statistical analysis. CareMedEval provides a challenging benchmark for grounded reasoning, exposing current LLM limitations and paving the way for future development of automated support for critical appraisal.",
         "citations": {
-            "bibtex": "@unpublished{bonzi:hal-05376617,\n  TITLE = {{CareMedEval dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field}},\n  AUTHOR = {Bonzi, Doria and Guiggi, Alexandre and B{\\'e}chet, Fr{\\'e}d{\\'e}ric and Ramisch, Carlos and Favre, Benoit},\n  URL = {https://hal.science/hal-05376617},\n  NOTE = {working paper or preprint},\n  YEAR = {2025},\n  MONTH = Nov,\n  DOI = {10.48550/arXiv.2511.03441},\n  KEYWORDS = {Computation and Language (cs.CL) ; Artificial Intelligence (cs.AI) ; critical appraisal ; reasoning ; evaluation ; medical ; domain specific dataset ; LLM},\n  PDF = {https://hal.science/hal-05376617v1/file/2511.03441v2.pdf},\n  HAL_ID = {hal-05376617},\n  HAL_VERSION = {v1}\n}",
-            "biblatex": "@online{bonzi2025caremedeval,\n  author = {Bonzi, Doria and Guiggi, Alexandre and Béchet, Frédéric and Ramisch, Carlos and Favre, Benoit},\n  title = {CareMedEval dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field},\n  year = {2025},\n  url = {https://hal.science/hal-05376617},\n  note = {HAL preprint}\n}"
+            "biblatex": "@inproceedings{bonzi2026caremedeval,\n  author = {Bonzi, Doria and Guiggi, Alexandre and Béchet, Frédéric and Ramisch, Carlos and Favre, Benoit},\n  title = {{CareMedEval} Dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field},\n  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},\n  pages = {5169--5181},\n  date = {2026-05-11},\n  url = {https://lrec.elra.info/lrec2026-main-404}\n}",
+            "bibtex": "@inproceedings{bonzi2026caremedeval,\n  author = {Bonzi, Doria and Guiggi, Alexandre and B{\\'e}chet, Fr{\\'e}d{\\'e}ric and Ramisch, Carlos and Favre, Benoit},\n  title = {{CareMedEval} Dataset: Evaluating Critical Appraisal and Reasoning in the Biomedical Field},\n  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},\n  pages = {5169--5181},\n  year = {2026},\n  month = may,\n  url = {https://lrec.elra.info/lrec2026-main-404}\n}"
+        }
+    },
+    {
+        "type": "Other contributions",
+        "title": "Extending a French OSCE Dialogue Dataset with Controllable LLM-Generated Dialogues",
+        "authors": ["Doria Bonzi", "Tom Bourgeade", "Irina Illina", "Fabrice Lefèvre"],
+        "date": "2026-10",
+        "venue": "Building Commons for Clinical LLMs (Health Data Hub)",
+        "pages": "13",
+        "link": "https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf",
+        "pdf": "https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf",
+        "abstract": "",
+        "citations": {
+            "biblatex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lefèvre, Fabrice},\n  title = {Extending a {French} {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  date = {2026-10},\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}",
+            "bibtex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lef{\\`e}vre, Fabrice},\n  title = {Extending a {F}rench {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  year = {2026},\n  month = oct,\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}"
         }
     }
 ]

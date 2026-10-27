@@ -34,7 +34,6 @@
                     <h2>email</h2>
                     <p>doria.bonzi@loria.fr</p>
                     <p>doria.bonzi@univ-lorraine.fr</p>
-                    <p>bonzidoria@gmail.com</p>
 
                     <h2>address</h2>
                     <p>Office C137</p>
@@ -62,7 +61,33 @@
     
         <section id="contact">
             <h2>Contact me!</h2>
-            <p>Always enthusiastic about NLP or tech, feel free to connect! 🧋</p>
+            <p>Always down to talk about NLP or tech, feel free to connect! 🧋</p>
+
+            <form id="contact-form" class="contact-form"
+                  action="https://formsubmit.app/f/g4pvhj5bdg" method="POST"
+                  data-email="doria.bonzi@loria.fr">
+
+                <input type="hidden" name="_subject" value="New message from your website">
+                <input type="text" name="_gotcha" class="honey" tabindex="-1" autocomplete="off">
+
+                <div class="form-field">
+                    <label for="cf-name">Name</label>
+                    <input type="text" id="cf-name" name="name" required autocomplete="name">
+                </div>
+
+                <div class="form-field">
+                    <label for="cf-email">Email</label>
+                    <input type="email" id="cf-email" name="email" required autocomplete="email">
+                </div>
+
+                <div class="form-field">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
         </section>
 
     </main>
