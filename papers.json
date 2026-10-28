@@ -49,18 +49,31 @@
         }
     },
     {
-        "type": "Other contributions",
+        "type": "other contributions",
         "title": "Extending a French OSCE Dialogue Dataset with Controllable LLM-Generated Dialogues",
         "authors": ["Doria Bonzi", "Tom Bourgeade", "Irina Illina", "Fabrice Lefèvre"],
         "date": "2026-10",
         "venue": "Building Commons for Clinical LLMs (Health Data Hub)",
         "pages": "13",
-        "link": "https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf",
-        "pdf": "https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf",
+        "link": "https://www.health-data-hub.fr/page/building-commons-clinical-llms-international-conference",
+        "pdf": "https://www.health-data-hub.fr/sites/default/files/2026-10/CONFERENCE%20PROCEEDINGS.pdf",
         "abstract": "",
         "citations": {
             "biblatex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lefèvre, Fabrice},\n  title = {Extending a {French} {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  date = {2026-10},\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}",
             "bibtex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lef{\\`e}vre, Fabrice},\n  title = {Extending a {F}rench {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  year = {2026},\n  month = oct,\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}"
+        }
+    },
+    {
+        "type": "other contributions",
+        "title": "Évaluation de l'analyse critique et du raisonnement des Grands Modèles de Langue dans le domaine médical",
+        "authors": ["Doria Bonzi"],
+        "date": "2025-09",
+        "note": "Master's thesis",
+        "link": "https://dumas.ccsd.cnrs.fr/dumas-05425167",
+        "pdf": "https://dumas.ccsd.cnrs.fr/dumas-05425167v1/file/BONZI_Doria_M2_IDL.pdf",
+        "citations": {
+            "biblatex": "@thesis{bonzi:dumas-05425167,\n  author = {Bonzi, Doria},\n  title = {Évaluation de l'analyse critique et du raisonnement des Grands Modèles de Langue dans le domaine médical},\n  type = {mathesis},\n  pagetotal = {63},\n  date = {2025-09},\n  url = {https://dumas.ccsd.cnrs.fr/dumas-05425167},\n  langid = {french}\n}",
+            "bibtex": "@mastersthesis{bonzi:dumas-05425167,\n  TITLE = {{{\\'E}valuation de l'analyse critique et du raisonnement des Grands Mod{\\`e}les de Langue dans le domaine m{\\'e}dical}},\n  AUTHOR = {Bonzi, Doria},\n  URL = {https://dumas.ccsd.cnrs.fr/dumas-05425167},\n  PAGES = {63},\n  YEAR = {2025},\n  MONTH = Sep,\n  KEYWORDS = {Reasoning ; Critical appraisal ; Biomedical ; LLM ; Evaluation ; Raisonnement ; Analyse critique ; Biom{\\'e}dical ; LLM ; Evaluation},\n  PDF = {https://dumas.ccsd.cnrs.fr/dumas-05425167v1/file/BONZI_Doria_M2_IDL.pdf},\n  HAL_ID = {dumas-05425167},\n  HAL_VERSION = {v1},\n}"
         }
     }
 ]
