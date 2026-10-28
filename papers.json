@@ -55,8 +55,8 @@
         "date": "2026-10",
         "venue": "Building Commons for Clinical LLMs (Health Data Hub)",
         "pages": "13",
-        "link": "https://www.health-data-hub.fr/page/building-commons-clinical-llms-international-conference",
-        "pdf": "https://www.health-data-hub.fr/sites/default/files/2026-10/CONFERENCE%20PROCEEDINGS.pdf",
+        "link": "https://www.health-data-hub.fr/sites/default/files/2026-10/CONFERENCE%20PROCEEDINGS.pdf",
+        "pdf":"https://drive.google.com/file/d/1Q-dUlPkucCzlr-9cEWoT99sKCM2vItxc/view",
         "abstract": "",
         "citations": {
             "biblatex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lefèvre, Fabrice},\n  title = {Extending a {French} {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  date = {2026-10},\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}",
