@@ -62,8 +62,8 @@
         "dataset": "https://zenodo.org/records/21810895",
         "abstract": "",
         "citations": {
-            "biblatex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lefèvre, Fabrice},\n  title = {Extending a {French} {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  date = {2026-10},\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}",
-            "bibtex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lef{\\`e}vre, Fabrice},\n  title = {Extending a {F}rench {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  year = {2026},\n  month = oct,\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}"
+            "biblatex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lefèvre, Fabrice},\n  title = {Extending a {French} {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  date = {2026-10},\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/CONFERENCE%20PROCEEDINGS.pdf}\n}",
+            "bibtex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lef{\\`e}vre, Fabrice},\n  title = {Extending a {F}rench {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  year = {2026},\n  month = oct,\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/CONFERENCE%20PROCEEDINGS.pdf}\n}"
         }
     },
     {
