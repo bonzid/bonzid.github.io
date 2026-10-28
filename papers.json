@@ -8,6 +8,7 @@
         "pages": "357–374",
         "link": "https://aclanthology.org/2026.sigdial-1.25/",
         "pdf": "https://aclanthology.org/2026.sigdial-1.25.pdf",
+        "dataset": "https://zenodo.org/records/21810895",
         "abstract": "The clinical and communication skills of medical students are commonly assessed through Objective Structured Clinical Examinations (OSCEs), which consist of brief scenario-driven simulations of doctor-patient interactions. However, training is often limited by the low availability of human standardized patients, motivating the development of realistic virtual patients (VPs). To address this gap, we introduce a French OSCE dialogue dataset comprising 240 real student–patient training interactions. We build upon it a controllable LLM-based pipeline to generate synthetic OSCE dialogues. The pipeline integrates modular components, such as retrieval-based grounding and a reflection loop, to ensure patient fidelity, coherence, and realism. Additionally, we propose a multi-level evaluation framework assessing patient simulation quality, student performance, and linguistic quality, using an LLM-as-a-Judge approach. Experiments suggest that controllability modules generally improve patient fidelity and student evaluation consistency. Finally, we also implement an interactive prototype in which students can practice with a VP and receive automatic feedback.",
         "citations": {
             "biblatex": "@inproceedings{bonzi2026french,\n  author = {Bonzi, Doria and Bourgeade, Tom and Lefèvre, Fabrice and Illina, Irina},\n  title = {A {French} {OSCE} Dialogue Dataset and Controllable Virtual Patient System for Clinical Training},\n  booktitle = {Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue},\n  publisher = {Association for Computational Linguistics},\n  pages = {357--374},\n  date = {2026-08},\n  url = {https://aclanthology.org/2026.sigdial-1.25/}\n}",
@@ -40,6 +41,7 @@
         "venue": "Language Resources and Evaluation Conference (LREC 2026)",
         "pages": "5169–5181",
         "link": "https://lrec.elra.info/lrec2026-main-404",
+        "pdf": "https://www.lrec-conf.org/proceedings/lrec2026/pdf/2026.lrec2026-1.404.pdf",
         "code": "https://github.com/bonzid/CareMedEval",
         "dataset": "https://huggingface.co/datasets/doriab/CareMedEval",
         "abstract": "Critical appraisal of scientific literature is an essential skill in the biomedical field. While large language models (LLMs) can offer promising support in this task, their reliability remains limited, particularly for critical reasoning in specialized domains. We introduce CareMedEval, an original dataset designed to evaluate LLMs on biomedical critical appraisal and reasoning tasks. Derived from authentic exams taken by French medical students, the dataset contains 534 questions based on 37 scientific articles. Unlike existing benchmarks, CareMedEval explicitly evaluates critical reading and reasoning grounded in scientific papers. Benchmarking state-of-the-art generalist and biomedical-specialized LLMs under various context conditions reveals the difficulty of the task: open and commercial models fail to exceed an Exact Match Rate of 0.5 even though generating intermediate reasoning tokens considerably improves the results. Yet, models remain challenged especially on questions about study limitations and statistical analysis. CareMedEval provides a challenging benchmark for grounded reasoning, exposing current LLM limitations and paving the way for future development of automated support for critical appraisal.",
@@ -57,6 +59,7 @@
         "pages": "13",
         "link": "https://www.health-data-hub.fr/sites/default/files/2026-10/CONFERENCE%20PROCEEDINGS.pdf",
         "pdf":"https://drive.google.com/file/d/1Q-dUlPkucCzlr-9cEWoT99sKCM2vItxc/view",
+        "dataset": "https://zenodo.org/records/21810895",
         "abstract": "",
         "citations": {
             "biblatex": "@inproceedings{bonzi2026extending,\n  author = {Bonzi, Doria and Bourgeade, Tom and Illina, Irina and Lefèvre, Fabrice},\n  title = {Extending a {French} {OSCE} Dialogue Dataset with Controllable {LLM}-Generated Dialogues},\n  booktitle = {Building Commons for Clinical LLMs},\n  pages = {13},\n  date = {2026-10},\n  url = {https://www.health-data-hub.fr/sites/default/files/2026-10/conference%20PROCEEDINGS.pdf}\n}",
